@@ -1,0 +1,12 @@
+
+.menu{
+  text-decoration: none;
+  color:white;
+  font-size: 1.2rem;
+  padding:0.5rem;
+  border-radius: 2rem;
+}
+.active{
+    background-color: aliceblue;
+    color:black
+}

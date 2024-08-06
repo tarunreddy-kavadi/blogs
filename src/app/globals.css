@@ -1,0 +1,11 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width:100%;
+    /* margin: 0rem 7rem 0rem 7rem; */
+    height: 100vh;
+    background-color: black;
+    background-size: 100%;
+    color:white;
+}
