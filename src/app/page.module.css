@@ -1,0 +1,25 @@
+.homeContainer{
+  display: grid;
+  grid-template-columns: 50% 50%;
+  gap:3rem;
+  margin: 0rem 5rem 0rem 5rem;
+}
+.title{
+    font-size: 5rem;
+    font-weight: bold;
+}
+.desc{
+    margin:2rem 0rem 0rem 0rem;
+}
+.buttons{
+    display: flex;
+    margin: 2rem 0rem 0rem 0rem;
+    gap:2rem;
+}
+.button:first-child{
+     background-color: blue;
+     color:white;
+}
+.button{
+    padding:1rem;
+}
