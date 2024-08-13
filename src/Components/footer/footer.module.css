@@ -1,0 +1,7 @@
+.container {
+  display: flex;
+  margin: 1rem 1.5rem 0rem 1.5rem;
+  justify-content: space-between;
+  color: gray;
+  font-size: smaller;
+}
