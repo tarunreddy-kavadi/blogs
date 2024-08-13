@@ -1,7 +1,11 @@
 .container {
   display: flex;
-  margin: 1rem 1.5rem 0rem 1.5rem;
+  margin: 1rem 3rem 0rem 3rem;
   justify-content: space-between;
   color: gray;
   font-size: smaller;
+}
+.logo{
+font-size:large;
+font-weight: 1000;
 }

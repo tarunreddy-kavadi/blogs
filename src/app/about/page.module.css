@@ -1,0 +1,24 @@
+.Container {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    margin: 3rem 10rem 0rem 10rem;
+    gap:5rem;
+}
+.about{
+    color:blue
+}
+.title{
+    font-size: 2.5rem;
+}
+.boxes{
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+}
+.box h1{
+ color:blue
+}
+.image{
+    position: relative;
+    height:500px;
+    width:500px;
+}
