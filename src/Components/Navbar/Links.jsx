@@ -1,5 +1,5 @@
 "use client"
-import { React, useState } from 'react'
+import { React, useState, useEffect } from 'react'
 import styles from './links.module.css'
 import NavLinks from '../NavLinks/navLinks'
 import ResponsveMenu from '../NavLinks/ResponsiveNavLinks/ResponsveMenu'
@@ -7,6 +7,7 @@ import ResponsveMenu from '../NavLinks/ResponsiveNavLinks/ResponsveMenu'
 const Links = () => {
     const [open, setOpen] = useState();
     const handleClick = () => setOpen(!open);
+
     const session = true;
     const isAdmin = false;
 

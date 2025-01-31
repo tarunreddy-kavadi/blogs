@@ -1,0 +1,27 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+    margin-bottom:20px;
+}
+.top{
+    display: flex;
+}
+.imgContainer{
+    height: 400px;
+    width:90%;
+    position: relative;
+}
+.img{
+    object-fit: cover;
+}
+.date{
+    transform: rotate(270deg);
+    font-size: 12px;
+    margin:auto
+}
+
+.title{
+    font-size: larger;
+    font-weight: bold;
+}

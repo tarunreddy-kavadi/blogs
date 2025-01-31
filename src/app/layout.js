@@ -6,8 +6,13 @@ import Footer from '@/Components/footer/Footer'
 
 const inter = Inter({ subsets: ['latin'] })
 
+
+// for the static SEO we use the function name need to be 'metadata'
 export const metadata = {
-  title: 'Next App',
+  title: {
+    default: 'Blog App',
+    template: "%s | Blog Application"
+  },
   description: 'Next.js starter app',
 }
 
