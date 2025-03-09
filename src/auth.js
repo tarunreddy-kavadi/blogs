@@ -1,3 +1,4 @@
+
 import NextAuth from "next-auth";
 import GitHubProvider from "next-auth/providers/github";
 
@@ -22,10 +23,11 @@ export const {
     ],
 });
 
-export const Login = async () => {
-    "use server"
-    await signIn("github");
-}
+// export const Login = async () => {
+//     "use server"
+//     await signIn("github");
+// }
+
 
 
 

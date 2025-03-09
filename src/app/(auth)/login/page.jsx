@@ -1,10 +1,10 @@
-import { Login } from "../../../auth"
+import { SignIn } from "../../../../lib/sessions"
 const LoginPage = () => {
 
   return (
     <div>
       LoginPage
-      <form action={Login}>
+      <form action={SignIn}>
         <button>
           loginhere
         </button>

@@ -3,13 +3,13 @@ import { React, useState, useEffect } from 'react'
 import styles from './links.module.css'
 import NavLinks from '../NavLinks/navLinks'
 import ResponsveMenu from '../NavLinks/ResponsiveNavLinks/ResponsveMenu'
+import { LogOut } from '../../../lib/sessions'
 
-const Links = () => {
+const Links = ({ session }) => {
     const [open, setOpen] = useState();
     const handleClick = () => setOpen(!open);
 
-    const session = true;
-    const isAdmin = false;
+
 
     const link = [
         {
@@ -37,17 +37,20 @@ const Links = () => {
     return <div className={styles.container}>
         {
             link.map((props) => <NavLinks props={props} key={props.title} />)
+
         }
         {
-            session ?
+            session?.user ?
                 (<>
-                    {isAdmin && <NavLinks props={{ title: 'Admin', path: '/admin' }} />}
-                    <button className={styles.logout}>Logout</button>
+                    {session.user?.isAdmin && <NavLinks props={{ title: 'Admin', path: '/admin' }} />}
+                    <form action={LogOut}>
+                        <button className={styles.logout} >Logout</button>
+                    </form>
                 </>) : <NavLinks props={{ title: 'Login', path: '/login' }}>Login</NavLinks>
         }
 
         <button className={styles.ResponsiveMenu} onClick={handleClick}>Menu</button>
-        {console.log(open)}
+        {/* {console.log(open)} */}
         <div className={styles.menu}>
             {
                 open && link.map((props) => <ResponsveMenu props={props} key={props.title} />)

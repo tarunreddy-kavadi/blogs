@@ -1,9 +1,9 @@
 'use server'
 import mongoose from 'mongoose'
 
-
+const connection = {};
 const connectToDb = async () => {
-    const connection = {};
+
     try {
         if (connection.isConnected) {
             console.log('DB sucessfully connected');
@@ -13,8 +13,8 @@ const connectToDb = async () => {
         connection.isConnected = db.connections[0].readyState;
     } catch (error) {
         console.log(error);
+        console.log('DB connection failed');
         throw new Error(error)
     }
 }
-
 export default connectToDb
